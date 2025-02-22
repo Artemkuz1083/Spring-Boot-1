@@ -3,16 +3,18 @@
 <head>
     <title>TODO</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-<h1 th:text="${appName}" style="color: green">Default app name</h1>
-
-<ul>
-    <li th:each="p : ${posts}">
-        <p th:text="${p.getText}">text</p>
-        <p>(лайков <span th:text="${p.getLikes}">999</span>)</p>
-    </li>
-</ul>
+    <div class="container">
+        <h1 th:text="${appName}" style="color: green">Default app name</h1>
+        <ul>
+            <li th:each="p : ${posts}">
+                <p th:text="${p.getText}">text</p>
+                <p>(лайков <span th:text="${p.getLikes}">999</span>)</p>
+            </li>
+        </ul>
+    </div>
 
 </body>
 </html>
