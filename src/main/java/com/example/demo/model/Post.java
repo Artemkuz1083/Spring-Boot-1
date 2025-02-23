@@ -21,10 +21,6 @@ public class Post {
         return likes;
     }
 
-    public void Add(String text){
-        this.text += text;
-    }
-
     public Date getCreationDate(){
         return creationDate;
     }
